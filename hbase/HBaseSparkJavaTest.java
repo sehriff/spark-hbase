@@ -51,7 +51,6 @@ public class HBaseSparkJavaTest {
                         TableInputFormat.class,
                         ImmutableBytesWritable.class,
                         Result.class);
-
         myRDD.cache().foreach(new VoidFunction<Tuple2<ImmutableBytesWritable, Result>>() {
             @Override
             public void call(Tuple2<ImmutableBytesWritable, Result> immutableBytesWritableResultTuple2) throws Exception {
