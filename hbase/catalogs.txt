@@ -1,0 +1,35 @@
+{
+"table":{"namespace":"default", "name":"t2"},
+"rowkey":"key:CELL",
+"columns":{
+"row":{"cf":"rowkey", "col":"key", "type":"string", "length":"10"},
+"cell1":{"cf":"rowkey", "col":"CELL", "type":"string"},
+"col1": {"cf": "cf1", "col": "col1"},
+"col2": {"cf": "cf1", "col": "col2"},
+"col3": {"cf": "cf1", "col": "col3"},
+"col4": {"cf": "cf1", "col": "col4"}
+}
+};
+
+{
+"table":{"namespace":"default", "name":"t3"},
+"rowkey":"key:CELL",
+"columns":{
+"row":{"cf":"rowkey", "col":"key", "type":"string", "length":"10"},
+"cell1":{"cf":"f3", "col":"CELL", "type":"string"}
+}
+};
+
+{
+"table":{"namespace":"default", "name":"incremental_table"},
+"rowkey":"key",
+"columns":{
+"row":{"cf":"rowkey", "col":"key", "type":"string", "length":"1"},
+"field1":{"cf":"f3", "col":"field1", "type":"string"},
+"field2":{"cf":"f3", "col":"field2", "type":"string"},
+"field3":{"cf":"f3", "col":"field3", "type":"string"},
+"field4":{"cf":"f3", "col":"field4", "type":"string"},
+"field5":{"cf":"f3", "col":"field5", "type":"string"},
+"modified_date":{"cf":"f3", "col":"modified_date", "type":"string"}
+}
+};

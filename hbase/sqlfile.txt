@@ -1,0 +1,5 @@
+insert into hbaseincremental_table select * from incremental_table;
+
+  
+  
+  
